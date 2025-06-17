@@ -1,9 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
+
 
 func cleanInput(text string) []string {
-	return []string{}
+	// return []string{}
+	clean := strings.Trim(text, " ")
+	clean = strings.Trim(clean, "\t")
+	return strings.Fields(clean)
 }
 
 
