@@ -111,7 +111,7 @@ func commandMap(c *config) error {
 	if resLocations.Previous != "" {
 		c.Previous = resLocations.Previous
 	} else {
-		c.Previous = ""
+		c.Previous = url
 	}
 
 	for _, l := range resLocations.Results {
